@@ -1,0 +1,16 @@
+event:
+  fields:
+    name:
+      required: true
+      example: washer_done
+      selector:
+        text:
+complete:
+  fields:
+    task_id:
+      required: true
+      selector:
+        number:
+          min: 1
+          max: 100000000
+          mode: box

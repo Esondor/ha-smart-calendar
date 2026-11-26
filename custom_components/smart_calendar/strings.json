@@ -1,0 +1,21 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Smart Calendar",
+        "data": { "url": "Address", "token": "Access token", "display_url": "Display link (optional)", "panel_title": "Sidebar title" },
+        "data_description": {
+          "token": "Smart Calendar → Settings → Access Tokens",
+          "display_url": "Leave empty: the tablet view is set up automatically."
+        }
+      }
+    },
+    "error": { "cannot_connect": "Cannot connect", "invalid_auth": "Invalid token" },
+    "abort": { "already_configured": "Already configured" }
+  },
+  "options": { "step": { "init": { "data": { "display_url": "Display link", "panel_title": "Sidebar title" } } } },
+  "services": {
+    "event": { "name": "Send event", "description": "Releases waiting follow-ups, e.g. washer_done.", "fields": { "name": { "name": "Event", "description": "Event name" } } },
+    "complete": { "name": "Complete task", "description": "Marks a task as done.", "fields": { "task_id": { "name": "Task ID", "description": "From the sensor attributes" } } }
+  }
+}

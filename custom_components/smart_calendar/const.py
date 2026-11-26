@@ -1,0 +1,6 @@
+DOMAIN = "smart_calendar"
+CONF_URL = "url"
+CONF_TOKEN = "token"
+CONF_DISPLAY = "display_url"
+CONF_TITLE = "panel_title"
+PANEL_PATH = "smart-calendar"
